@@ -12,4 +12,4 @@ if [ ! -d "/root/.ipython" ]; then
     ipython profile create nbserver; printf "%s\n" "c.NotebookApp.ip = '*'" "c.NotebookApp.open_browser = False" "c.NotebookApp.password = u''" "c.NotebookApp.port = 9999" >> /root/.ipython/profile_nbserver/ipython_config.py
 fi
 
-LD_LIBRARY_PATH=/usr/local/lib ipython notebook --profile=nbserver --port-retries=0
+LD_LIBRARY_PATH=/usr/local/lib ipython notebook --profile=nbserver --port-retries=0 &
