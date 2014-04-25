@@ -1,5 +1,5 @@
 aptitude update
-aptitude install -y git g++ libboost-dev libboost-test-dev libboost-random-dev libgsl0-dev libhdf5-serial-dev python-dev python-pip pkg-config cython python-zmq
+aptitude install -y git g++ libboost-dev libboost-test-dev libboost-regex-dev libboost-random-dev libgsl0-dev libhdf5-serial-dev python-dev python-pip pkg-config cython python-zmq
 pip install ipython jinja2 tornado
 
 cd /vagrant; git clone git://github.com/ecell/ecell4
