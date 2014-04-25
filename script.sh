@@ -2,6 +2,7 @@
 
 if test -e "/var/provision_done"
 then
+	LD_LIBRARY_PATH=/usr/local/lib ipython notebook --profile=nbserver --port-retries=0 &
 	exit 0
 fi
 
