@@ -16,7 +16,7 @@ cd /vagrant/ecell4/gillespie; python ../waf configure build install
 cd /vagrant/ecell4/ode; LD_LIBRARY_PATH=/usr/local/lib python ../waf configure build install
 cd /vagrant/ecell4; PREFIX=/usr/local bash install.sh core_python gillespie_python ode_python
 
-if [ ! -d "/root/.ipython" ]; then
+if [ ! -f "/root/.ipython/profile_nbserver/ipython_config.py" ]; then
     ipython profile create nbserver; printf "%s\n" "c.NotebookApp.ip = '*'" "c.NotebookApp.open_browser = False" "c.NotebookApp.password = u''" "c.NotebookApp.port = 9999" >> /root/.ipython/profile_nbserver/ipython_config.py
 fi
 
