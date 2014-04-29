@@ -11,4 +11,4 @@ $ cd ecell4-vagrant
 $ vagrant up
 ```
 
-open 0.0.0.0:8080 with your browser
+open localhost:8888 with your browser
