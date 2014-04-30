@@ -4,7 +4,7 @@
 
 # How to use ecell4-vagrant
 
-Download https://github.com/ecell/ecell4-vagrant/archive/master.zip
+Download and unzip https://github.com/ecell/ecell4-vagrant/archive/master.zip
 
 ```
 $ cd ecell4-vagrant
