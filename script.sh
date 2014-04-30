@@ -12,7 +12,8 @@ cd /vagrant/ecell4/ode; LD_LIBRARY_PATH=/usr/local/lib python ../waf configure b
 cd /vagrant/ecell4; PREFIX=/usr/local bash install.sh core_python gillespie_python ode_python
 
 # Put launch script of ipython notebook.
-chmod 755 /vagrant/start_ipython.sh
+cp /vagrant/start_ipython.sh /usr/local/bin/start_ipython.sh
+chmod 755 /usr/local/bin/start_ipython.sh
 
 # Put upstart stcript for launching ipython when startup
 cp /vagrant/ipy.conf /etc/init/ipy.conf
