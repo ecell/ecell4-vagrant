@@ -1,7 +1,6 @@
 # Requirements
 * Virtualbox
 * Vagrant
-* git
 
 # How to use ecell4-vagrant
 
