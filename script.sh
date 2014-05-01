@@ -7,9 +7,10 @@ aptitude install -y git g++ libboost-dev libboost-test-dev libboost-regex-dev li
 pip install ipython jinja2 tornado
 cd /vagrant; git clone git://github.com/ecell/ecell4
 cd /vagrant/ecell4/core; python ../waf configure build install
-cd /vagrant/ecell4/gillespie; python ../waf configure build install
+cd /vagrant/ecell4/gillespie; LD_LIBRARY_PATH=/usr/local/lib python ../waf configure build install
 cd /vagrant/ecell4/ode; LD_LIBRARY_PATH=/usr/local/lib python ../waf configure build install
-cd /vagrant/ecell4; PREFIX=/usr/local bash install.sh core_python gillespie_python ode_python
+cd /vagrant/ecell4/lattice; LD_LIBRARY_PATH=/usr/local/lib python ../waf configure build install
+cd /vagrant/ecell4; PREFIX=/usr/local bash install.sh core_python gillespie_python ode_python lattice_python
 
 # Put launch script of ipython notebook.
 cp /vagrant/start_ipython.sh /usr/local/bin/start_ipython.sh
