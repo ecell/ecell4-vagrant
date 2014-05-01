@@ -10,7 +10,8 @@ cd /vagrant/ecell4/core; python ../waf configure build install
 cd /vagrant/ecell4/gillespie; LD_LIBRARY_PATH=/usr/local/lib python ../waf configure build install
 cd /vagrant/ecell4/ode; LD_LIBRARY_PATH=/usr/local/lib python ../waf configure build install
 cd /vagrant/ecell4/lattice; LD_LIBRARY_PATH=/usr/local/lib python ../waf configure build install
-cd /vagrant/ecell4; PREFIX=/usr/local bash install.sh core_python gillespie_python ode_python lattice_python
+cd /vagrant/ecell4/bd; LD_LIBRARY_PATH=/usr/local/lib python ../waf configure build install
+cd /vagrant/ecell4; PREFIX=/usr/local bash install.sh core_python gillespie_python ode_python lattice_python bd_python
 
 # Put launch script of ipython notebook.
 cp /vagrant/start_ipython.sh /usr/local/bin/start_ipython.sh
