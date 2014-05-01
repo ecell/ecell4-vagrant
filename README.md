@@ -35,4 +35,7 @@ When you rebooted your PC, ecell4-vagrant vm might be in *aborted* state.
 In this state, you cannot access E-Cell4 IPython notebook.
 Please run
 
-    vagrant reload
+```
+cd ecell4-vagrant-master
+vagrant reload
+```
