@@ -12,7 +12,6 @@
 
 ## Ubuntu 14.04 LTS (Trusty Tahr) Virtualbox, Vagrant installation
 1. Open terminal, and run `sudo apt-get install virtualbox`
-    
 2. Download deb file from http://www.vagrantup.com/downloads.html , and run `sudo dpkg -i vagrant_*.deb` in terminal.
 
 # How to use ecell4-vagrant
@@ -28,9 +27,13 @@ vagrant up
 
 * open localhost:8888 with your browser, there should be 7 ipynb tutorials.
 
+![tutorials](https://raw.githubusercontent.com/ecell/ecell4-vagrant/master/images/tutorials.png)
+
 ## When you aborted ecell4-vagrant
 
 When you rebooted your PC, ecell4-vagrant vm might be in *aborted* state.
+
+![aborted](https://raw.githubusercontent.com/ecell/ecell4-vagrant/master/images/aborted.png)
 
 In this state, you cannot access E-Cell4 IPython notebook.
 Please run
