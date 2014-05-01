@@ -11,10 +11,9 @@
 2. Download msi file from http://www.vagrantup.com/downloads.html , and open it.
 
 ## Ubuntu 14.04 LTS (Trusty Tahr) Virtualbox, Vagrant installation
-1. Run the following command
-    sudo apt-get install virtualbox
-2. Download deb file from http://www.vagrantup.com/downloads.html , and run the following command
-    sudo dpkg -i vagrant_*.deb
+1. Open terminal, and run `sudo apt-get install virtualbox`
+    
+2. Download deb file from http://www.vagrantup.com/downloads.html , and run `sudo dpkg -i vagrant_*.deb` in terminal.
 
 # How to use ecell4-vagrant
 
