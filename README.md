@@ -2,6 +2,9 @@
 * Virtualbox
 * Vagrant
 
+## Disk space and memory
+ecell4-vagrant requires *1.5GB* disk space and *2GB* memory
+
 ## Mac OS X Virtualbox, Vagrant installation
 1. Download dmg file from http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html , and open it.
 2. Download dmg file from http://www.vagrantup.com/downloads.html , and open it.
