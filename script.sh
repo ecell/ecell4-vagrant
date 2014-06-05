@@ -2,6 +2,9 @@
 
 # Set up environment...
 
+sed -i -e "s/security.ubuntu.com/ftp.jaist.ac.jp\/pub\/Linux/g" /etc/apt/sources.list
+sed -i -e "s/archive.ubuntu.com/ftp.jaist.ac.jp\/pub\/Linux/g" /etc/apt/sources.list
+
 aptitude update
 aptitude install -y git g++ libboost-dev libboost-test-dev libboost-regex-dev libboost-random-dev libgsl0-dev libhdf5-serial-dev python-dev python-matplotlib python-pip pkg-config cython python-zmq
 pip install ipython jinja2 tornado
